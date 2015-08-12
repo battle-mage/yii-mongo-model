@@ -1,1 +1,1 @@
-# yii-mongo-record
+# yii-mongo-model
