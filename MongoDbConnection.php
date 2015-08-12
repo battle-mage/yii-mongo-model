@@ -25,7 +25,7 @@ class MongoDbConnection extends CApplicationComponent
 
         if(is_null($this->_mongo)) {
             try {
-                $params = [];
+                $params = array();
 
                 if(!empty($this->_username)) {
                     $params["username"] = $this->_username;
