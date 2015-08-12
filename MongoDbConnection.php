@@ -3,7 +3,7 @@
 /**
  * Class MongoDbConnection
  *
- * Singleton для подключения к MongoDB
+ * Singleton to connect MongoDB
  * @author Danatbek Argimbayev
  */
 class MongoDbConnection extends CApplicationComponent
