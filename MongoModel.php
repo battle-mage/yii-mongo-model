@@ -61,6 +61,16 @@ class MongoModel
                 }
     }
 
+    public function __unset($name)
+    {
+        unset($this->_attributes[$name]);
+    }
+
+    public function __isset($name)
+    {
+        return isset($this->_attributes[$name]);
+    }
+
     public function setAttributes($attributes)
     {
         $result = $this->_attributes;
