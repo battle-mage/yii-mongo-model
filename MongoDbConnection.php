@@ -41,7 +41,7 @@ class MongoDbConnection extends CApplicationComponent
 
                 $this->_mongo = new MongoClient("mongodb://{$this->_host}", $params);
             } catch(MongoConnectionException $e) {
-                throw new CDbException("Can't connect to Mongo DB");
+                throw new CDbException("Can't connect to Mongo DB <br>".$e->getMessage());
             }
         }
     }
